@@ -57,7 +57,7 @@ def find_last_30_days_points(rating_history: list) -> list:
             left = mid + 1
     
     if closest_index == -1:
-        return []
+        return rating_history
     
     return last_30_records[closest_index:]
 
